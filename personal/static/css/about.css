@@ -79,3 +79,30 @@
     opacity:1;
   }
 }
+
+.our-team-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+.overlay{
+  position: absolute;
+  top: 75%;
+  left: 0;
+  right: 0;
+  background-color: rgb(46, 131, 118);
+  overflow: hidden;
+  height: 25%;
+  width: 100%;
+  transition:.5s ease;
+  opacity: 1;
+  padding: 15px;
+ 
+}
+
+
+.text{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}

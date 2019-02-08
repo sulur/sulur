@@ -6,6 +6,7 @@
 		<title>About us</title>
 		<link rel="stylesheet" href="{% static 'css/content.css' %}" type="text/css">
 		<link rel="stylesheet" href="{% static 'css/about.css' %}" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
  	{% include "personal/includes/navbar.html" %}
  	<div class="jumbotron">
@@ -79,13 +80,19 @@
 						<div class="fade-in">
 							<h2>Our Teams</h2>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum numquam, laborum dolorum eligendi laboriosam dicta quasi, recusandae exercitationem maxime aliquam eaque, vitae, consectetur repellat a eos facere alias ex esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam totam quae molestiae, nemo ex doloribus veniam nesciunt sunt distinctio. Error velit impedit vel odit nam! Nostrum voluptatem quidem nihil recusandae.</p>
-							<hr width="300px;" style="border: 1.5px solid #485d70; border-radius: 5px;">
-							<p><img src="{% static 'pictures/google-02-01.jpg' %}" alt="" class="img-responsive"></p>
-							<br>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aperiam, at ex deleniti temporibus atque modi! Sint distinctio natus in aspernatur, iste illum maiores earum iusto ipsum, aliquam, placeat cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ab doloribus enim aspernatur, accusamus quae, atque illo eum dicta soluta quos sit esse est. Nihil porro fugiat vero illum. </p>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam corporis atque aperiam nihil voluptates, dignissimos mollitia corrupti dolorum adipisci consectetur facilis itaque iure enim tempora minima, ab. Voluptatum, perspiciatis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet officiis doloremque voluptatem, suscipit mollitia ducimus perferendis facilis dolorem, veritatis vitae.</p>	
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<div class="our-team-wrapper">
+										<div class="overlay">
+											<div class="text-center text">Rizal Hamdan Arigusti</div>
+										</div>
+										<img src="{% static 'pictures/photo_me.jpg' %}" alt="" style="width: 100%; height: auto;">
+										
+									</div>
+									
+								</div>	
+							</div>
+							
 						</div>
 						
 					</div>
@@ -93,7 +100,7 @@
 						<div class="fade-in">
 							<h2>Our Partners</h2>
 							<hr>
-							<p><img src="{% static 'pictures/google-02-01.jpg' %}" alt="" class="img-responsive"></p>
+							<!-- <p><img src="{% static 'pictures/google-02-01.jpg' %}" alt="" class="img-responsive"></p> -->
 							<br>
 							<p>A community and organization certainly cannot escape the touch of those who are important and who can develop us into a community that is beneficial to others. Alhamdulillah, Sulur Dream Work is currently supported by academy communities in the Department of Informatics in Islamic University of Indonesia itself, both by our lecturers, fellow students, our seniors, our juniors, and alumni. With their role too, slowly we become an association that is increasingly proactive and motivate to fellow students who want to improve themselves to become better individuals in the future.</p>
 						</div>
