@@ -1,2 +1,2 @@
 # sulur
-this is out official website repository
+this is our official website repository
