@@ -10,13 +10,14 @@ h2.text-center {
 .jumbotron {
   background-image: url("../pictures/jumbo.jpg");
   background-size: cover;
-  min-height: 400px;
+  min-height: 550px;
   z-index: 1;
 }
 .jumbo {
   min-height: 550px;
   margin-top: -580px;
   background: rgba(46, 131, 118, 0.42);
+  z-index: -10;
 }
 #link-nav li a {
   color: #2e8376;
