@@ -19,14 +19,14 @@ h2.text-center {
   background: rgba(46, 131, 118, 0.42);
 }
 #link-nav li a {
-  color: white;
+  color: #2e8376;
 }
 #link-nav li a:hover {
   color: #2e8376;
 }
 #nav {
   background: transparent;
-  position: fixed;
+  position: static;
   width: 100%;
   z-index: 99999;
   transition: all ease 0.5s;
