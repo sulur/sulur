@@ -9,14 +9,29 @@
 		<link rel="stylesheet" href="{% static 'css/about.css' %}" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
+	<style>
+	@media only screen and (max-width:600px){
+		.jumbo{
+			margin-top:-342px; min-height:312px;
+		
+		}
+		.jumbotron{
+			padding-top: -100px;
+		}
+		#text-jumbo{
+			margin-top: ;
+		}
+	}
+	
+	</style>
  	{% include "personal/includes/navbar.html" %}
  	<div class="jumbotron">
 		<div class="container">
 				<div class="title">
 					<div class="row">
-						<div class="col col-md-8 col-sm-8 col-xs-12 col-md-offset-2">
-							<div class="text-center">
-								<h2 class="text-center" style="font-weight: bold;">Want to know something about us?</h2>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="text-center" id="text-jumbo">
+								<h2 class="text-center " style="font-weight: bold;">Want to know something about us?</h2>
 								<hr>
 							<p class="paragraph">You're in the right page</p>
 							</div>
@@ -26,7 +41,7 @@
 				</div>
 			</div>
 	</div>
-	<div class="jumbo">
+	<div class="jumbo" style="">
 	
 	</div>
 	<div class="content-section" style="padding-bottom: 0px;">

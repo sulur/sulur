@@ -19,6 +19,7 @@ h2.text-center {
   background: rgba(46, 131, 118, 0.42);
   z-index: -10;
 }
+
 #link-nav li a {
   color: #2e8376;
 }
@@ -130,4 +131,21 @@ h2.text-center {
 p {
   font-family: "Arial";
   font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    min-height: 300px;
+    background-size: cover;
+  }
+  .jumbo {
+    min-height: 300px;
+    margin-top: -330px;
+  }
+  .quote {
+    margin-top: 10px;
+  }
+  .quote .container .row .col-md-12 > p {
+    font-size: 14px;
+  }
 }
