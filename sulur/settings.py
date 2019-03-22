@@ -26,10 +26,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG =
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [
-                       s.strip() for s in v.split(',')])
+ALLOWED_HOSTS = ['localhost', 'sulur.herokuapp.com',
+                 '127.0.0.1', '192.168.31.144', 'sulurdreamwork.site', 'www.sulurdreamwork.site']
 
 
 # Application definition
