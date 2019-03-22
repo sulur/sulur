@@ -28,7 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG =
 DEBUG = config('DEBUG', defualt=True, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [
+                       s.strip() for s in v.split(',')])
 
 
 # Application definition
