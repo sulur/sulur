@@ -10,16 +10,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+- Git. Download the installer [here](https://git-scm.com/downloads)
 - Python-3.7.x. Download the installer [here](https://www.python.org/downloads/)
 - PostgreSQL Version 11. Download the installer [here](https://www.postgresql.org/download/)
 
-### Installing
+### Project Installation
 
 A step by step series of examples that tell you how to get a development env running
 
 Open terminal for macOS and linux or Command Prompt for Windows
 
-1. Install 'pip' package manager by running this command
+1. If your python version is not >= 3.4 for Python3 or >= 2.7.9 for Python2, Install 'pip' package manager by running this command
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -31,64 +32,96 @@ and
 python get-pip.py
 ```
 
-2.
+2. Clone this repositories by download the zip file [here](https://github.com/sulur/sulur) or run this command in your git bash.
 
 ```
-until finished
+git clone https://github.com/sulur/sulur.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+3. Open terminal or command prompt and Install virtualenv by running this command (add sudo before the command if you are Mac or Linux user)
+
+```
+ pip install virtualenv
+```
+
+4. activate the virtualenv by run this command
+
+```
+ source /path/to/ENV/bin/activate (Mac OS and Linux) or \path\to\env\Scripts\activate (Windows)
+```
+
+5. In your terminal or command prompt, change directory to the project folder
+
+6. Install all requirements stuff by run this command:
+
+```
+ pip install -r requirements.txt
+```
+
+### Database Setup
+
+1. Open PostgreSQL and start the connection
+
+2. Open command prompt and run this command
+
+```
+psql -U postgres
+```
+
+3. Create new user for postgres server by run this command
+
+```
+CREATE USER yourcustomusername WITH PASSWORD 'yourcustompassword';
+```
+
+4. Create Database by run this command
+
+```
+CREATE DATABASE yourcustomdatabasename
+```
+
+5. Grant privileges by run this command
+
+```
+GRANT ALL PRIVILEGES ON DATABASE yourcustomdatabasename to yourcustomusername;
+```
+
+6. run this command:
+
+```
+\q
+```
+
+7. login to postgres again with your custom user by running this command
+
+```
+psql -U customusername
+```
+
+8. if login is succeed, run this command:
+
+```
+\l
+```
+
+9. the setup is succed when you see your custom user has access in the custom database.
+
+10. contact the coordinator of TE team in Sulur for the next required setup before running the tests
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+1. activate the virutalenv by running this command
 
 ```
-Give an example
+ source /path/to/ENV/bin/activate (Mac OS and Linux) or \path\to\env\Scripts\activate (Windows)
 ```
 
-### And coding style tests
+2. virtualenv is activated when you see (ENV or other words) at the beginning of command line
 
-Explain what these tests test and why
+3. to run the test, type this command and enter
 
 ```
-Give an example
+python manage.py runserver
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+### this is the end of document
