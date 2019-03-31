@@ -10,21 +10,28 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+- Python-3.7.x. Download the installer [here](https://www.python.org/downloads/)
+- PostgreSQL Version 11. Download the installer [here](https://www.postgresql.org/download/)
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Open terminal for macOS and linux or Command Prompt for Windows
+
+1. Install 'pip' package manager by running this command
 
 ```
-Give the example
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
 
-And repeat
+and
+
+```
+python get-pip.py
+```
+
+2.
 
 ```
 until finished
