@@ -1,91 +1,85 @@
-.sidebar-about{
-	height: 50px;
+.sidebar-about {
+  height: 50px;
 }
-.sidebar-about-thumbnail{
-	margin-bottom: 20px;
-	height: 50px;
-	box-shadow: 5px 5px 8px #b0b0b0;
-	background-color: #485d70;
-	color: white;
+.sidebar-about-thumbnail {
+  margin-bottom: 20px;
+  height: 50px;
+  box-shadow: 5px 5px 8px #b0b0b0;
+  background-color: #485d70;
+  color: white;
 }
-.content{
-	display: none;
+.content {
+  display: none;
   color: #485d70;
 }
-.helper{
-	position: absolute;
-	top: 50%;
-
+.helper {
+  position: absolute;
+  top: 50%;
 }
-.active, .sidebar-about-thumbnail:hover{
-	background-color: #f0f0f0;
-	color: #485d70;
+.active,
+.sidebar-about-thumbnail:hover {
+  background-color: #f0f0f0;
+  color: #485d70;
 }
-.sidebar-about-thumbnail:hover{
+.sidebar-about-thumbnail:hover {
   margin-left: -10px;
-
 }
 
 .fade-in {
   animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
 }
 
-
-@keyframes fadeIn{
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
-.our-team-wrapper{
-    position: relative;
-    width: 100%;
-    max-width: 300px;
+.our-team-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 75%;
   left: 0;
@@ -94,14 +88,12 @@
   overflow: hidden;
   height: 25%;
   width: 100%;
-  transition:.5s ease;
+  transition: 0.5s ease;
   opacity: 1;
   padding: 15px;
- 
 }
 
-
-.text{
+.text {
   color: white;
   font-size: 16px;
   text-align: center;
